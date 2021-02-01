@@ -1,0 +1,29 @@
+.header__wrapper{
+    display: flex ;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 0;
+    height: 70px;
+    align-items: center;
+}
+
+.menu__wrapper{
+    display: flex;
+
+}
+
+.menu__items{
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.img__wrapper{
+    width: 4cdc0px;
+    height: 40px;
+}
+
+.img__wrapper>img{
+    width: 100%;
+    height: 100%;
+
+}
