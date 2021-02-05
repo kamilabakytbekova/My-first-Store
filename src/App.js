@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header/>
       <div className={'wrapper'}>
-      <Card />
+      <Card/>
       </div>
       </div>
      
