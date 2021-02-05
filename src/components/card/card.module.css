@@ -1,0 +1,7 @@
+.img_wrapper{
+    width: 300px;
+}
+
+.img_wrapper>img{
+    width: 100%;
+}
