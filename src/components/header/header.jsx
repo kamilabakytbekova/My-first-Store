@@ -1,21 +1,21 @@
 import React from 'react'
-import './header.css'
-import basket from './../../img/add-to-basket.png'
-import logo from './../../img/brand.png'
+import css from './header.module.css'
+import basket from './../../img/basket.png'
+import logo from './../../img/logo.png'
 
  const Header = () => {
-    return <div className={'header__wrapper wrapper'}>
-        <div className={'logo__wrapper'}>
+    return <div className={`${css.wrapper} wrapper`}>
+        <div className={css.logo}>
             <img src={logo} alt="logo"/>
         </div>
-        <div className={'menu__wrapper'}>
-        <div className={'menu__items'}>Главная</div>
-        <div className={'menu__items'}>Категория</div>
-        <div className={'menu__items'}>Популярные</div>
-        <div className={'menu__items'}>Новинки</div>
+        <div className={css.menu}>
+        <div className={css.items}>Главная</div>
+        <div className={css.items}>Категория</div>
+        <div className={css.items}>Популярные</div>
+        <div className={css.items}>Новинки</div>
         </div>
         <div>
-        <div className={'img__wrapper'}>
+        <div className={css.img}>
             <img src={basket} alt='Basket'/>
         </div>
         </div>
