@@ -2,12 +2,14 @@ import React from 'react'
 import css from './header.module.css'
 import basket from './../../img/basket.png'
 import logo from './../../img/logo.png'
+import {Link} from 'react-router-dom'
 
  const Header = () => {
     return <div className={`${css.wrapper} wrapper`}>
-        <div className={css.logo}>
+        
+        <Link to = {'/'} className={css.logo}>
             <img src={logo} alt="logo"/>
-        </div>
+        </Link>
         <div className={css.menu}>
         <div className={css.items}>Главная</div>
         <div className={css.items}>Категория</div>
@@ -15,11 +17,12 @@ import logo from './../../img/logo.png'
         <div className={css.items}>Новинки</div>
         </div>
         <div>
-        <div className={css.img}>
+        <Link to = {'/basket'}className={css.img}>
             <img src={basket} alt='Basket'/>
-        </div>
+          </Link> 
         </div>
     </div>
+
 }
 
 export default Header

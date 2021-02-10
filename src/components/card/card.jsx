@@ -1,17 +1,20 @@
 import React from 'react';
 import css from './card.module.css'
 
-const Card = () => {
+const Card = (props) => {
     return(
         <div className={css.wrapper}>
             <div className={css.img_wrapper}>
-                <img src="https://www.britishretro.co.uk/wp-content/uploads/2018/12/50s-black-swing-dress-001.jpg" alt="Dress"/>
-            <span>3750 сом</span>
+                
+                <img src={props.pic}
+                alt={props.name}/>
+                <span>{props.price} сом</span>
+            
             
             </div>
 
             <div className={css.name_wrapper}>
-                <div>Dress</div>
+                <div>{props.name}</div>
                 <div>Stars</div>
             </div>
         

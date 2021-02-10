@@ -1,0 +1,40 @@
+.wrapper {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.text{
+   text-align: center;
+   margin: 0 auto;
+   
+  
+}
+.img_slider{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.img_slider>img{
+    height: 300px;
+    width: 250px;
+    
+}
+
+.main_img{
+    background-color: grey;
+    text-align: center;
+    
+}
+
+.main_img1{
+    display: flex;
+    justify-content: space-between;
+}
